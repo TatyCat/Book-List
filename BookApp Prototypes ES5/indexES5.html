@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Book List</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+        html{
+            background-color: snow;
+        }
+        .headText{
+            text-shadow: 2px 1px 7px #5e5b5b;
+            color: #29292b;
+        }
+    </style>
+</head>
+<body>
+    <header class="w3-panel headText"> 
+        <h1 class="w3-container">JS Book List App</h1>
+    </header>
+  
+    <span id="addABookSection"></span>
+
+    <article class="w3-panel">
+        <div class="w3-card-4 w3-white">        
+            <h2 class="w3-xxlarge w3-indigo w3-container">Add a Book</h2>
+            <form id="book-form" class="w3-container w3-margin-bottom">
+                <p>
+                    <input type="text" id="title" class="w3-input">
+                    <label for="title">Title</label>
+                </p>
+
+                <p>
+                    <input type="text" id="author" class="w3-input">
+                    <label for="author">Author</label>
+                </p>
+
+                <p>
+                    <input type="text" id="isbn" class="w3-input">
+                    <label for="isbn">ISBN</label>
+                </p>
+                <input type="submit" value="Submit" class="w3-button w3-block w3-light-green">
+                <br>
+            </form>
+        </div>
+
+        <hr>
+
+        <div class="">
+            <table class="w3-table w3-striped w3-bordered">
+                <thead>
+                    <tr class="w3-indigo">
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>ISBN</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id='book-list'></tbody>
+            </table>
+        </div>
+    </article>
+
+    <script src="appES5prototypes.js"></script>
+</body>
+</html>
